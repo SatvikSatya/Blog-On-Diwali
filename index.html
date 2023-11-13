@@ -1,0 +1,120 @@
+       <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Diwali Blog</title>
+            <style>
+                body {
+                    font-family: 'Arial', sans-serif;
+                    margin: 20px;
+                    padding: 20px;
+                    background-color: #f2f2f2;
+                }
+        
+                header {
+                    text-align: center;
+                    background-color: #ffcc00;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                }
+        
+                main {
+                    width: 70%;
+                    margin: auto;
+                }
+        
+                article {
+                    background-color: #fff;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 8px;
+                }
+        
+                h1, h2 {
+                    color: #ff6600;
+                }
+        
+                p {
+                    line-height: 1.6;
+                }
+        
+                .comments {
+                    margin-top: 30px;
+                }
+        
+                textarea {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+        
+                button {
+                    background-color: #ff6600;
+                    color: #fff;
+                    padding: 10px;
+                    border: none;
+                    cursor: pointer;
+                }
+        
+               
+            </style>
+        </head>
+        <body>
+            <header>
+                <h1>Diwali Celebration Blog</h1>
+            </header>
+        
+            <main>
+                <article>
+                    <h2>The Festival of Lights - Diwali</h2>
+                    <p>
+                        💡Diwali, also known as Deepavali, is one of the most popular Hindu festivals celebrated across the globe. It signifies the victory of light over darkness and good over evil. The festival usually lasts five days and is marked by the lighting of diyas, colorful rangoli, delicious sweets, and the exchange of gifts.
+                    </p>
+        
+                    <p>
+                        🧑🏻‍🤝‍🧑🏻Families come together to celebrate Diwali, sharing joy and happiness. It's a time for prayer, reflection, and expressing gratitude. The sound of firecrackers and the glow of lamps create a festive atmosphere that is truly magical.
+                    </p>
+
+                    <p>
+                        🕯️Diwali is connected to various religious events, deities and personalities, such as being the day Rama returned to his kingdom in Ayodhya with his wife Sita and his brother Lakshmana after defeating the demon king Ravana.
+                    </p>
+
+                    <p>
+                        🍂The five-day celebration is observed every year in early autumn after the conclusion of the summer harvest. It coincides with the new moon (amāvasyā) and is deemed the darkest night of the Hindu lunisolar calendar. The festivities begin two days before amāvasyā, on Dhanteras, and extend two days after, until the second (or 17th) day of the month of Kartik.
+                    </p>
+
+                    <p>
+                        🎇The five-day long festival originated in the Indian subcontinent and is likely a fusion of harvest festivals in ancient India. It is mentioned in early Sanskrit texts, such as the Padma Purana and the Skanda Purana, both of which were completed in the second half of the 1st millennium CE.
+                    </p>
+
+                    <p>
+                        🪔The diyas (lamps) are mentioned in Skanda Kishore Purana as symbolising parts of the sun, describing it as the cosmic giver of light and energy to all life and which seasonally transitions in the Hindu calendar month of Kartik.
+                    </p>
+                </article>
+        
+                <div class="comments">
+                    <h2>Fun Time!</h2>
+                    <textarea id="commentInput" rows="4" placeholder="Write your views on 🕯️Diwali..."></textarea>
+                    <button onclick="addComment()">Add Comment</button>
+                    <div id="commentList"></div>
+                </div>
+            </main>
+        
+            <script>
+               
+                function addComment() {
+                    const commentInput = document.getElementById('commentInput');
+                    const commentList = document.getElementById('commentList');
+        
+                    const comment = document.createElement('p');
+                    comment.textContent = commentInput.value;
+                    commentList.appendChild(comment);
+        
+                    commentInput.value = '';
+                }
+            </script>
+        </body>
+        </html>
+         
+
+   
